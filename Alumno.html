@@ -1,0 +1,83 @@
+<html>
+<head>
+	<title>Formulario Alumno</title>
+	<meta charset="utf-8"/>
+
+    <style>
+             *{
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
+                }
+        .form-register{
+            width: 400px;
+           background-color: #FFE4E1;
+           padding: 30px;
+           margin: auto;
+           margin-top: 100px;
+           border-radius: 4px;
+           font-family: 'Times New Roman', Times, serif;
+           box-shadow: 7px 13px 37px #000;  
+        }
+        .controls {
+            width: 100%;
+            background: #24303c;
+            padding: 10px;
+            border-radius: 4px;
+            margin-bottom: 16px;
+            border: 1px solid #1f53c5;
+            font-family: 'calibri';
+            font-size: 18px;
+            color: white;
+        }
+        .form-register p {
+            height: 40px;
+            text-align: center;
+            font-size: 18px;
+            line-height: 40px;
+            
+        }
+
+        .form-register a {
+             color: white;
+             text-decoration: none;
+        }
+
+        .form-register a:hover {
+            color: white;
+             text-decoration: underline;
+        }
+
+        .form-register .botons {
+             width: 100%;
+             background: #1f53c5;
+             border: none;
+             padding: 12px;
+             color: white;
+             margin: 16px 0;
+             font-size: 16px;
+        }
+
+    </style>
+</head>
+<body bgcolor="#E6E6FA">
+
+<center><h1>Agregar Alumno</h1></center>
+
+
+    
+<form class="form-register" action="insert.php" method="post">
+    <input class="controls" type="text" name="nombres" id="nombres" placeholder="Nombre">
+    <input class="controls" type="text" name="apellidopaterno" id="apellidopaterno" placeholder="Apellido Paterno">
+    <input class="controls" type="text" name="apellidomaterno" id="apellidomaterno" placeholder="Apellido Materno">
+    <input class="controls" type="text" name="grupoa" id="grupoa" placeholder="Grupo">
+    <input class="controls" type="text" name="materiaa" id="materiaa" placeholder="Materia">
+    <input class="controls" type="text" name="calificaciona" id="calificaciona" placeholder="Calificacion">
+    <input class="botons" type="submit" value="Agregar">
+</form><br><br>
+
+<center><p><a href="Index.html">Regresar al inicio</a></p></center><br><br>
+<center><p><a href="calificaciones.php">Ir a las Calificaciones</a></p></center>
+
+</body>
+</html>
